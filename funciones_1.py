@@ -1,8 +1,9 @@
 # def primera(mensaje, usuario,tema):
 #     #return mensaje + usuario + tema
 #     pass
+    
 
-# v1 = primera('Hola mundo', ' teo ', ' clase de funciones')
+# v1 = primera('Hola mundo', ' teo ','')
 # print(v1)
 
 
