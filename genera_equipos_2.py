@@ -11,7 +11,7 @@ def genera_equipos(alumnos, miembros=2):
 
 
 
-gente = [1,2,3,4,5,6,7,8,9]
+gente = ['Fernando', 'Alan', 'Jose', 'Rafa','Víctor', 'Antonio','Alejandro', 'Juan', 'Raúl']
 for i in range(5):
     x = genera_equipos(gente,2)
     print(x)
