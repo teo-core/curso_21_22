@@ -24,5 +24,6 @@ for i in range(0,len(lista_archivos),miembros):
 
 # Guardar archivos en el fichero
 
+
 #nuevo.write(fila)
 nuevo.close()
