@@ -1,0 +1,15 @@
+Ejercicio 1:
+
+Programa que pida al usuario los siguientes datos:
+- Nombre
+- Apellido
+- Fecha nacimiento
+- Teléfono
+
+Tiene que pedir datos hasta que el usuario diga que ya terminó.
+
+Los datos se guardan en un diccionario
+
+Al final se muestra el diccionario
+-- ----------------------------------------------------------
+
