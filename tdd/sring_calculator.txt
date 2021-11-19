@@ -1,0 +1,66 @@
+Requisito 1: 
+	El método SUMAR puede aceptar 0, 1 o 2 números separados por una coma:
+    1. Escribir un caso de prueba que compruebe: 
+    	- si se reciben más de 2 números la función lance una excepción, 
+    	- si se reciben 2 números devuelva true 
+    	- si se recibe una cadena que contiene un carácter no numérico lance una excepción. 
+    	
+    2. Escribir la función sumar que sea capaz de superar estos 3 casos de prueba. 
+    
+Requisito 2: 
+	Para la cadena vacía el método devolverá 0:
+    1. Escribir un caso de prueba que compruebe que cuando se invoca el método sumar 		con la cadena vacía devuelve un 0. 
+    2. Modificar el método sumar para que devuelva 0. 
+
+Requisito 3: 
+	El método devolverá la suma de números:
+    1. Añadir los casos de prueba para comprobar que el método SUMAR es capaz 
+    	de devolver un número cuando es invocado con un número, 
+    o de sumar dos números cuando es invocado con 2 números. 
+    2. Modificar el método sumar para que o devuelva un número o sume dos. 
+    
+Requisito 4: 
+	Permitir que el método sumar maneje una cantidad indefinida de números:
+	
+    1. Añadir un caso de prueba para comprobar que el método sumar es capaz de sumar 		por ejemplo los números 3,6,15,18,46,33. 
+    Ojo hay que quitar el caso de prueba que comprueba que si se envían más de dos 			números se lanza una excepción. 
+    
+    2. Modificar el métodos sumar para que pueda sumar estos números. 
+    Ojo, hay que quitar la excepción que devuelve cuando recibe más de 2 números.     
+
+Requisito 5: 
+	Permitir que el método sumar maneje saltos de línea entre los números, además de comas:
+    1. Añadir el caso de prueba que compruebe que un salto de línea (n) se acepta 		como separador de números dentro de la cadena. 
+    2. Modificar el método sumar para que tenga en cuenta que el delimitador puede 		ser una coma o una n. 
+    
+    
+Requisito 6: Permitir el uso de distintos delimitadores:
+
+Para cambiar el delimitador, al principio de la cadena se incluirá de lo siguiente "//[delimitador]\n[numeros…]" por ejemplo "//;\n1;2" debería ser tomado como los números 1 y 2 separados por el delimitador ";".
+
+    1. Incluir un caso de prueba para comprobar que cuando se envía la cadena "//;\n1;2", el resultado de la suma es 3. 
+    
+    2. Modificar el método sumar para que contemple este caso. El resto de los casos deben seguir funcionando. 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
