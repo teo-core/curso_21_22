@@ -43,7 +43,11 @@ Para cambiar el delimitador, al principio de la cadena se incluirá de lo siguie
     2. Modificar el método sumar para que contemple este caso. El resto de los casos deben seguir funcionando. 
     
     
-    
+Requisito 7: Si hay números negativos se lanzará una excepción:
+
+Llamar al método sumar con un número negativo lanzará una excepción "los números negativos no están permitidos" y se mostrarán los números negativos enviados en el mensaje.
+    1. Incluir un caso de prueba para probar que para la cadena ("3,-6,15,-18,46,33"), se lanza una excepción en la que en el mensaje se incluyen los números -6 y -18. 
+    2. Modificar la calculadora para que lance la excepción en el caso de que la cadena contenga números negativos.     
     
     
     

@@ -1,5 +1,11 @@
+
 def sumar(cadena):
     total = 0
+    if str(cadena).startswith('//;\n'):
+        partes = cadena.partition('\n')
+        separador = partes[0][-1]
+        cadena = partes[2].replace(separador, ',')
+
     cadena = cadena.replace('n',',')
     lista = cadena.split(',')
     longitud = len(lista)
@@ -44,6 +50,9 @@ def numeros_separados_por_n():
 
 def barra_barra_punto_coma_devuelve_suma():
     return sumar("//;\n1;2")
+
+def valores_negativos_producen_error():
+    return sumar("3,-6,15,-18,46,33") 
 # ---------------------------
 #print(mas_de_dos_numeros_da_error())
 
@@ -64,3 +73,5 @@ print(numeros_ilimitados_devuelve_suma())
 print(numeros_separados_por_n())
 
 print(barra_barra_punto_coma_devuelve_suma())
+
+print(valores_negativos_producen_error())
