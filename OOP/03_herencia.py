@@ -51,7 +51,7 @@ class Coche(Vehiculo):
 
     
 
-c = Coche('1234-JKL', 'Renault', '4L','1234KKK')
+c = Coche( modelo='4L',numero_serie='1234KKK',matricula='1234-JKL', marca='Renault')
    
 print(f'Vehículo matrícula {c.get_matricula()} marca {c.marca} y modelo {c._modelo}, con número de serie {c.get_num_serie()}')
 
