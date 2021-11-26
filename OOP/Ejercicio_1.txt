@@ -1,0 +1,2 @@
+1.- Crear un método "acelerar" que cambie la velocidad a un un nuevo valor.
+Debe ser positiva o cero y "algo" que nos permita saber la velocidad actual.

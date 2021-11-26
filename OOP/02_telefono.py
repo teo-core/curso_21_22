@@ -1,6 +1,3 @@
-from typing import AwaitableGenerator
-
-
 class Telefono():
     marca = None
     modelo = None
