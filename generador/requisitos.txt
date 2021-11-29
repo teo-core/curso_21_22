@@ -1,0 +1,4 @@
+1. Generar el equeleto de una página web
+    - Si pasamos lista vacía al generador devuelve esqueleto
+    - 
+2. A partir de una lista genere una tabla html

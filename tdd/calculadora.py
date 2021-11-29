@@ -8,7 +8,7 @@ def sumar(cadena):
 
     cadena = cadena.replace('n',',')
     lista = cadena.split(',')
-    longitud = len(lista)
+    
     if cadena == '': #cadena vacía
         return 0
 
@@ -17,6 +17,8 @@ def sumar(cadena):
             return "Error: Carácter no numérico"
 
     for i in lista:
+        if int(i) < 0 :
+            return "Error: No se admiten números negativos"
         total += int(i)
     return total
 
