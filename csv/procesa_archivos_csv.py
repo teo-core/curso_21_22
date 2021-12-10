@@ -54,7 +54,7 @@ def leer_with():
 
 
 def leer_dict():
-    csv_in = open(ruta + 'annual-enterprise-survey-2020.csv')
+    csv_in = open(ruta + 'titanic.csv')
     lector_dict = csv.DictReader(csv_in)
 
     lista_dict = list(lector_dict)
