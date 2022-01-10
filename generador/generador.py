@@ -46,9 +46,8 @@ class Generador():
         
         pag = self.__generar_tabla()
         completa= vacio.replace(self.__MARCADOR,pag)
+        return completa
 
-        with open('/home/teo/codigo/curso_21_22/generador/tabla.html','w') as arch:
-            arch.write(completa)
         
 
 
@@ -65,4 +64,7 @@ def leer_dict():
 elementos = leer_dict()
 g = Generador()
 pagina = g.generar_pagina(elementos)
+
+with open('/home/teo/codigo/curso_21_22/generador/tabla_2.html','w') as arch:
+    arch.write(pagina)
 
