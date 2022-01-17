@@ -1,4 +1,3 @@
-from socket import NI_NUMERICHOST
 
 
 class Nif():

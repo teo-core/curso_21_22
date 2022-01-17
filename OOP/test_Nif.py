@@ -6,4 +6,5 @@ class TestNif(unittest.TestCase):
         nif = Nif()
         self.assertNotEqual(nif,None)
     
+
     
