@@ -2,6 +2,10 @@
 Crear una clase Calificaciones.
 Tendrá un método init que admitirá como entrada una lista de forma ['Raul',9.2,5,4.5,7,9.1]
 Tendra un método 'calificar' que nos devolverá ['Raul', 'Notable']
+TODO:
+    - Crear lista de alumnos a partir de un archivo (CSV, Long. fija, etc)
+    - Crear lista a partir de base de datos
+    - Crear lista a partir de JSON
 
 """
 
@@ -66,8 +70,11 @@ class Calificaciones():
 
     @notas.setter
     def notas(self, nuevas_notas):
-        self.__notas = nuevas_notas
-        self.__calificacion = self.calcula_calificacion()
+        if self.valida_notas(nuevas_notas):
+            self.__notas = nuevas_notas
+            self.__calificacion = self.calcula_calificacion()
+        else:
+            raise Exception('Notas inválidas')
     
     @property
     def calificacion(self):

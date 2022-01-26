@@ -48,7 +48,12 @@ class TestCalificaciones(ut.TestCase):
         cal.notas = [5,6,7,8,9,10]
 
         self.assertEqual(cal.notas,[5,6,7,8,9,10])
-        self.assertEqual(cal.calificacion,'NOTABLE')    
+        self.assertEqual(cal.calificacion,'NOTABLE')
+
+    def test_asigna_notas_invalidas(self):
+        cal = Calificaciones()
+        cal.notas = [-5,6,7,8,9,10]  
+        self.assertRaises('Exception: Notas inválidas')  
 
     def test_validar_notas_incorrectas(self):
         lista_notas = [1,22]
@@ -61,3 +66,7 @@ class TestCalificaciones(ut.TestCase):
     def test_validar_notas_correctas(self):
         lista_notas = [5,6.2,7,8,9,10]
         self.assertEqual(Calificaciones.valida_notas(lista_notas),True)
+
+    def test_validar_notas_correctas(self):
+        lista_notas = []
+        self.assertEqual(Calificaciones.valida_notas(lista_notas),False)        
