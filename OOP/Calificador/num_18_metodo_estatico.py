@@ -8,6 +8,8 @@ TODO:
     - Crear lista a partir de JSON
 
 """
+class NotasInvalidasError(Exception):
+    pass
 
 class Calificaciones():
     def __init__(self,alumno_notas=[]) -> None:
@@ -70,11 +72,17 @@ class Calificaciones():
 
     @notas.setter
     def notas(self, nuevas_notas):
-        if self.valida_notas(nuevas_notas):
-            self.__notas = nuevas_notas
-            self.__calificacion = self.calcula_calificacion()
-        else:
-            raise Exception('Notas inválidas')
+        # if self.valida_notas(nuevas_notas):
+        #     self.__notas = nuevas_notas
+        #     self.__calificacion = self.calcula_calificacion()
+        # else:
+        #     raise Exception('Notas inválidas')
+        try:
+            if self.valida_notas(nuevas_notas):
+                self.__notas = nuevas_notas
+                self.__calificacion = self.calcula_calificacion()
+        except NotasInvalidasError:
+            pass
     
     @property
     def calificacion(self):
@@ -90,11 +98,13 @@ class Calificaciones():
         """
         valido = True
         if lista_notas == []:
-            valido = False
+            #valido = False
+            raise NotasInvalidasError("La lista de notas está vacía")
 
         for nota in lista_notas:
             if not type(nota) in (int,float) or not (0.0<= nota <= 10.0) :
-                valido = False
+                #valido = False
+                raise NotasInvalidasError('Tipo de datos o valores incorrectos')
         
         return valido
 
